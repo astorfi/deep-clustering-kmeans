@@ -80,7 +80,7 @@ if __name__ == '__main__':
                               'clustering'))
     parser.add_argument('--hidden-dims', default=[500, 500, 2000],
                         help='learning rate (default: 1e-4)')
-    parser.add_argument('--latent_dim', type=int, default=10,
+    parser.add_argument('--latent_dim', type=int, default=30,
                         help='latent space dimension')
     parser.add_argument('--n-clusters', type=int, default=10,
                         help='number of clusters in the latent space')
@@ -90,6 +90,8 @@ if __name__ == '__main__':
                         help='number of jobs to run in parallel')
     parser.add_argument('--cuda', type=bool, default=True,
                         help='whether to use GPU')
+    parser.add_argument('--deviceID', type=int, default=0,
+                        help='which GPU')
     parser.add_argument('--log-interval', type=int, default=100,
                         help=('how many batches to wait before logging the '
                               'training status'))
