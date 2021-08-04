@@ -1,5 +1,5 @@
 ### DCN: Deep Clustering Network
-A fork of(https://github.com/xuyxu/Deep-Clustering-Network)[https://github.com/xuyxu/Deep-Clustering-Network]. This repo is a re-implementation of DCN using PyTorch.
+A fork of(https://github.com/xuyxu/Deep-Clustering-Network)[https://github.com/xuyxu/Deep-Clustering-Network]. This repo is a re-implementation of DCN using PyTorch. Paper: (https://arxiv.org/pdf/1610.04794v1.pdf)[https://arxiv.org/pdf/1610.04794v1.pdf]
 
 #### Introduction
 An interesting work that jointly performs unsupervised dimension reduction and clustering using a neural network autoencoder.
