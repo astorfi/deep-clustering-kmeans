@@ -13,7 +13,8 @@ class DCN(nn.Module):
         self.args = args
         self.beta = args.beta  # coefficient of the clustering term
         self.lamda = args.lamda  # coefficient of the reconstruction term
-        self.device = torch.device('cuda' if args.cuda else 'cpu')
+        self.deviceID = args.deviceID
+        self.device = torch.device('cuda:'+str(self.deviceID) if args.cuda else 'cpu')
 
         # Validation check
         if not self.beta > 0:
